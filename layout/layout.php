@@ -1,0 +1,38 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><?= $title ?? 'My App' ?></title>
+  <link href="media/css/styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.3.1/dist/css/coreui.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+<?php include 'navbar.php'; ?>
+
+<div class="container-fluid">
+  <div class="row">
+    <aside class="col-12 col-md-3 col-lg-2 p-0">
+
+      <?php include 'sidebar.php'; ?>
+    </aside>
+
+    <main class="col-12 col-md-9 col-lg-10 py-4 px-4">
+      <?php if (isset($content)) include $content; ?>
+    </main>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.3.1/dist/js/coreui.bundle.min.js"></script>
+</body>
+
+</html>
