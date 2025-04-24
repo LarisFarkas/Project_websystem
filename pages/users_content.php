@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <div class="d-flex justify-content-between align-items-center mb-3">
     <h1 class="mb-0">Users</h1>
-    <a href="register.php" class="btn btn-primary">Add User</a>
+    <a href="create_user.php" class="btn btn-primary">Add User</a>
   </div>
   <?php if (!empty($message)): ?>
     <div class="alert alert-danger"><?= $message ?></div>
