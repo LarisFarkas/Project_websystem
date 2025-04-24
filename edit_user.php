@@ -91,7 +91,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['update_user'])) {
         $stmt_role->close();
     }
 }
-
 // Hämta användaren igen (oavsett GET eller efter POST)
 $user = fetchUserData($conn, $userId);
 if (!$user) {

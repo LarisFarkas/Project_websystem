@@ -46,6 +46,11 @@ if (isset($_SESSION['edit_user_data'])) {
             </select>
 
         </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">New Password (optional):</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Leave blank to keep current password">
+        </div>
+
         <button type="submit" name="update_user" class="btn btn-primary">Update User</button>
         <a href="users.php" class="btn btn-secondary">Cancel</a>
     </form>
