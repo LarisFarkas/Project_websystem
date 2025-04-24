@@ -56,10 +56,17 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-primary <?= basename($_SERVER['PHP_SELF']) == 'logout.php' ? 'active' : '' ?>" href="logout.php">
-                    <i class="bi bi-box-arrow-right me-2"></i> Logout
-                </a>
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <a class="nav-link text-primary <?= basename($_SERVER['PHP_SELF']) == 'logout.php' ? 'active' : '' ?>" href="logout.php">
+                        <i class="bi bi-box-arrow-left me-2"></i> Logout
+                    </a>
+                <?php else: ?>
+                    <a class="nav-link text-primary <?= basename($_SERVER['PHP_SELF']) == 'login.php' ? 'active' : '' ?>" href="login.php">
+                        <i class="bi bi-box-arrow-in-right me-2"></i> Login
+                    </a>
+                <?php endif; ?>
             </li>
+
         </ul>
     </div>
 </div>
