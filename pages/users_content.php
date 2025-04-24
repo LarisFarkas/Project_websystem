@@ -8,7 +8,7 @@
   <?php endif; ?>
   <?php if (!empty($users)): ?>
     <div class="table-responsive">
-      <table class="table table-striped table-bordered table-hover">
+      <table class="table table-dark table-striped table-bordered table-hover">
         <thead class="table-dark">
           <tr>
             <th>ID</th> 
