@@ -24,7 +24,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-primary <?= basename($_SERVER['PHP_SELF']) == 'create_incidents.php' ? 'active' : '' ?>" href="create_incidents.php">
+                <a class="nav-link text-primary <?= basename($_SERVER['PHP_SELF']) == 'create_incident.php' ? 'active' : '' ?>" href="create_incident.php">
                     <i class="bi bi-plus-circle me-2"></i> Create Incident
                 </a>
             </li>
