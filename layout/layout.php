@@ -3,7 +3,6 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,12 +19,11 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <div class="container-fluid">
   <div class="row">
-    <aside class="col-12 col-md-3 col-lg-2 p-0">
-
+    <aside class="col-12 col-sm-12 col-md-9 col-lg-12 col-xl-12">
       <?php include 'sidebar.php'; ?>
     </aside>
 
-    <main class="col-12 col-md-9 col-lg-10 py-4 px-4">
+    <main class="col-12 col-sm-10 col-md-10 col-lg-11 col-xl-12 px-0">
       <?php if (isset($content)) include $content; ?>
     </main>
   </div>
