@@ -4,7 +4,7 @@
     <button class="btn btn-primary d-xl-none mt-3" id="sidebarToggle">
         ☰
     </button>
-    <div class="sidebar sidebar-narrow-unfoldable bg-dark text-primary border-end pt-4" id="sidebar">
+    <div class="sidebar sidebar-narrow-unfoldable bg-dark text-primary border-end pt-4 px-2" id="sidebar">
         <div class="sidebar-header border-bottom text-white">
             <div class="sidebar-brand text-primary">Menu</div>
         </div>
